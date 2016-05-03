@@ -1,15 +1,20 @@
 using System;
 using Terraria;
+using Terraria.ID;
 using Terraria.ModLoader;
 
 namespace TheMathematicalMod
 {
 	public class TheMathematicalMod : Mod
 	{
-		public override void SetDefaults()
+		public TheMathematicalMod ()
 		{
-			name = "TheMathematicalMod";
-			properties.autoload = true;
+			Properties = new ModProperties()
+			{
+				Autoload = true;
+			};
 		}
+		
+		
 	}
 }
